@@ -192,7 +192,6 @@ footer{text-align:center;padding:12px 4px 7px;color:#a18cae;font-size:10px}
 <header>
  <div class="brand">ماشین حساب مهندسی</div>
  <div class="toolbar">
-  <button class="icon-btn" id="calcBtn" title="ماشین حساب">▦</button>
   <button class="icon-btn" id="historyBtn" title="تاریخچه">◷</button>
   <button class="icon-btn about-btn" id="aboutBtn" title="درباره من">
    <span>✦</span><span>درباره من</span>
@@ -447,7 +446,6 @@ $('converterBtn').onclick=()=>$('converterModal').classList.add('show');
 $('historyBtn').onclick=()=>$('historyModal').classList.add('show');
 $('scienceBtn').onclick=()=>$('scienceModal').classList.add('show');
 $('extraScienceBtn').onclick=()=>$('scienceModal').classList.add('show');
-$('calcBtn').onclick=()=>{clear();window.scrollTo({top:0,behavior:'smooth'})};
 $('clearHistory').onclick=()=>{history=[];renderHistory()};
 document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{
  if(e.target===o)o.classList.remove('show');
